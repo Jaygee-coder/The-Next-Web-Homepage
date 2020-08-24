@@ -90,13 +90,18 @@ nav li {
     color: rgb(255, 255, 255)
 }
 /*second nav bar*/
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 .tab-area {
     display: flex;
     overflow: hidden;
     box-sizing: border-box;
     width: 100%;
     height: 48px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 500;
     color: rgb(170, 170, 170);
@@ -165,8 +170,7 @@ nav li {
     display: table-cell;
     width: 65%;
     margin-right: 10px;
-    background-color: transparent;
-    background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png),  url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(../images/logo-area.png);
+    background: linear-gradient(335deg, transparent 30%, rgba(235, 82, 56, 0.7) 80%), linear-gradient(rgba(255, 200, 182, 0.7) 0%, transparent 20%), url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png), url(../images/logo-area.png);
     background-size: 100% 100%;
     background-position: 0% 0%;
     background-position-x: 0%;
@@ -174,7 +178,11 @@ nav li {
     background-clip: border-box;
     background-origin: padding-box;
     background-repeat: no-repeat;
-    mix-blend-mode: hard-light;
+    mix-blend-mode: lighten;
+}
+#transparent-logo {
+    max-width: 50%;
+    margin: 0px 10px;
 }
 .TNW-container .right-side {
     display: table-cell;
@@ -182,18 +190,17 @@ nav li {
 }
 .TNW-container .left-side ul {
     list-style: none;
-    display: inline;
 }
 
 .left-side .date {
-    float: right;
     font-size: 16px;
-    font-weight: 200;
-    margin-right: 20px;
+    font-weight: 300;
+    margin-left: 600px;
+    margin-top: 20px;
 }
 .left-side #world {
     text-transform: uppercase;
-    margin-top: 250px;
+    margin-top: 130px;
     margin-bottom: 10px;
     margin-left: 10px;
     font-weight: 300;
@@ -236,7 +243,7 @@ nav li {
 .right-side #intro {
     margin-left: 10px;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
