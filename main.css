@@ -165,6 +165,7 @@ nav li {
     padding: 0px 20px 2px 10px;
     margin-bottom: 50px;
 }
+
 .TNW-container .left-side {
     box-sizing: border-box;
     display: table-cell;
@@ -760,9 +761,6 @@ h2:hover {
 .third-container .code {
     background-image: url(../images/thirty-four.png);
 }
-.third-container .off {
-
-}
 .third-container .deal {
     font-size: 16px;
     font-weight: 900;
@@ -788,6 +786,7 @@ h2:hover {
 }
 /*footer*/
 footer {
+    width: 100%;
     box-sizing: border-box;
     height: 280px;
     color: rgb(170, 170, 170);
@@ -828,4 +827,216 @@ footer .links{
     height: 100px;
     font-size: 13px;
     padding-top: 50px;
+}
+/*media queries*/
+@media screen and (max-width: 480px) {
+/*navigation bar*/
+    .nav-bar-three {
+        height: 40px;
+    }
+    .sticky {
+        position: relative;
+    }
+/*TNW Container*/
+    .TNW-container {
+        display: block;
+    }
+
+    .TNW-container .left-side {
+        display: block;
+        width: 100%;
+        margin: 5px;
+        padding: 0px;
+        height: 33.33333%;
+    }
+    .TNW-container .left-side .transparent-logo {
+        padding-top: 0px;
+    }
+    .TNW-container .left-side #intro {
+        font-size: 20px;
+        margin: 0px 5px 5px 5px;
+    }
+    .TNW-container .right-side .row-one #intro {
+        font-size: 20px;
+        padding-top: 100px;
+        padding-bottom :20px;
+        margin-left: 5px;
+    }
+    .TNW-container .right-side .row-two #intro {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    .TNW-container .left-side #world {
+        margin: 20px 0px 5px 5px;
+        font-size: 11px;
+    }
+    .right-side .row-two #world {
+        margin: 10px 0px 5px 5px;
+        font-size: 11px;
+        padding-top: 70px;
+    }
+    .right-side .row-two #span {
+        padding-bottom: 10px;
+    }
+    .TNW-container #span {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .TNW-container .right-side .row-one, .row-two {
+        display: block;
+        width: 100%;
+        margin: 5px;
+        height: 33.33333%;
+    }
+    .left-side .date {
+        font-size: 10px;
+        font-weight: 300;
+        margin-left: 170px;
+        margin-top: 0px;
+    }
+    /*first-container*/
+    .first-container {
+        box-sizing: border-box;
+        width: 95%;
+        display: block;
+        margin: 0 auto;
+        font-family: sans-serif;
+        padding-right: 30px;
+        padding-left: 10px;
+    }
+/*latest news heading*/
+    h2 .latest-news{
+        margin-left: 10px;
+    }
+
+    .first-container img {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .first-row, .second-row {
+        display: block;
+    }   
+
+    /*columns*/
+    .first-container .column {
+        display: block;
+        width: 100%;
+    }
+ /*index.co container*/
+    .index-container {
+        width: 90%;
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .index-container li {
+        display: block;
+        
+    }
+    .index-container #add, #updates {
+        border-right: none;
+    }
+    .index-container .more {
+        border: none;
+        margin: 5px 0px 10px 20px;
+    }
+    .index-container h2 {
+        
+        margin-left: 20px;
+        width: 100%;
+    }
+    .index-container .row {
+        display: block;
+    }
+    .index-container .column {
+        display: block;
+        width: 90%;
+        margin: 20px;
+    }
+/*second container*/
+    /*images*/
+    .second-container img {
+        width: 100px;
+        height: 100%;
+    }
+    /*background-area*/
+    .second-container .background-area{
+        width: 100%;
+    }
+    .card-area {
+        width: 100%;
+        height: 40%
+    }
+    .second-container .main {
+        list-style-position: inside;
+    }
+    .second-container .first-row, .second-row, .third-row {
+        display: block;
+        margin: 30px 0px;
+    }
+    .second-container .column-one, .column-two, .column-three {
+        display: block;
+        width: 90%;
+        margin: 10px;
+    }
+/*third container*/
+    .third-container li{
+        display: inline-block;
+        list-style: none;
+    }
+    .third-container h2 {
+        margin-bottom: 20px;
+        margin-left: 5px;
+    }
+    .third-container .off {
+        height: 0px;
+        width: 0px;
+    }
+    .third-container .percentage {
+        color: transparent;
+    }
+    .third-container .row {
+        display: block;
+        margin: 0px;
+    }
+    .third-container .column {
+        display: flex;
+        width: 90%;
+        margin: 0px 5px;
+    }
+    .third-container .cost-area {
+        display: block;
+        margin-top: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    .third-container .ms-excel, .vpn, .zuitte, .unity, .social, .visualmodo, .resoume, .code {
+        height: 150px;
+        width: 100%;
+        margin-right: 10px;
+    } 
+    .third-container .previous-cost {
+        font-size: 11px;
+    }
+    .third-container .current-cost {
+        font-size: 13px;
+    }
+    /*footer*/
+    footer .links {
+        height: 150px;
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+    .footer-links-social i {
+        font-size: 14px;
+    }
+    footer .footer-links-social li{
+        padding: 2px;
+    }
+    .footer-legal {
+        height: 100px;
+        padding: 30px 0px 10px 0px;
+    }   
+    
 }
